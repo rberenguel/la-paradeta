@@ -1,0 +1,338 @@
+:root {
+  --bg-color: #1a1b26;
+  --card-bg: #24283b;
+  --text-color: #a9b1d6;
+  --title-color: #c0caf5;
+  --border-color: #414868;
+  --accent-color: #7aa2f7;
+  --accent-text: #1a1b26;
+  --accent-hover: #9abdf5;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --close-color: #f7768e;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: #2f354a;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card-content {
+  padding: 0.9rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--title-color);
+  padding-right: 1rem;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  max-width: 50%;
+}
+
+.card-tag {
+  cursor: pointer;
+  background-color: var(--border-color);
+  color: var(--text-color);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+  transition:
+    transform 0.1s ease,
+    background-color 0.2s ease;
+}
+
+.card-tag:hover {
+  transform: scale(1.05);
+  background-color: var(--accent-color);
+  color: var(--accent-text);
+}
+
+.card-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.card-description p {
+  margin: 0 0 0.5rem 0;
+}
+
+.card-description p:last-child {
+  margin-bottom: 0;
+}
+
+.card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  color: var(--accent-hover);
+}
+
+.card-actions {
+  padding: 0 1.25rem 1.25rem;
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--border-color);
+  color: var(--title-color);
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.action-button:hover {
+  background-color: var(--accent-color);
+  color: var(--accent-text);
+}
+
+.placeholder-image {
+  background-color: var(--bg-color);
+  background-size: 460px 400px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--card-bg),
+    var(--card-bg) 12.5px,
+    var(--border-color) 12.5px,
+    var(--border-color) 25px
+  );
+  animation: moveStripes 90s linear infinite;
+}
+
+@keyframes moveStripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 400px 0;
+  }
+}
+
+/* --- Filter Indicator --- */
+#filter-indicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(36, 40, 59, 0.95); /* --card-bg with alpha */
+  color: var(--title-color);
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+  pointer-events: none; /* So it doesn't block clicks */
+}
+
+/* --- Filter Clear Button --- */
+#filter-clear-button {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.6rem;
+  min-width: 44px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1001;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    opacity 0.3s ease-out;
+}
+
+#filter-clear-button:hover {
+  background-color: var(--close-color);
+  color: var(--accent-text);
+  transform: scale(1.1);
+}
+
+#filter-clear-button .close-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+#filter-clear-button .filter-text-label {
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 0.05em;
+  max-width: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- Filter Count --- */
+#filter-count {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  display: none;
+  opacity: 0;
+  z-index: 1000;
+  transition: opacity 0.4s ease-out;
+  pointer-events: none;
+}
+
+/* --- Mobile Search UI --- */
+#mobile-search-button {
+  display: none; /* Hidden by default */
+}
+
+#mobile-search-container {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 1rem;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  z-index: 1002;
+}
+
+#mobile-search-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+#mobile-search-input::placeholder {
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+/* --- Media Query for Mobile --- */
+@media (max-width: 768px) {
+  #mobile-search-button {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent-color);
+    color: var(--accent-text);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    cursor: pointer;
+    z-index: 1001;
+    transition: transform 0.2s ease;
+  }
+
+  #mobile-search-button:hover {
+    transform: scale(1.1);
+  }
+
+  #mobile-search-container.visible {
+    display: block;
+  }
+
+  /* Hide the count on mobile to avoid clutter with the search button */
+  #filter-count {
+    display: none !important;
+  }
+}
