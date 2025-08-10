@@ -52,7 +52,7 @@ A Chrome extension to visually jump across tabs. I wanted to see if I could do i
 # [NT]()
 
 [Github](https://github.com/rberenguel/nt)
-[Web-based demo](https://mostlymaths.net/nt)
+[Demo (as web)](https://mostlymaths.net/nt)
 
 A very customizable _new tab_ extension for Chrome.
 
@@ -144,8 +144,8 @@ A simple, turn-based roguelike prototype with a Western theme, built in JavaScri
 # [obsidian-preso-plugin]()
 
 [Github](https://github.com/rberenguel/obsidian-preso-plugin)
-[Demo(JS)](https://www.mostlymaths.net/obsidian-preso-plugin/examples/Preso.html)
-[Demo(No JS)](https://www.mostlymaths.net/obsidian-preso-plugin/examples/Preso.css-only.html)
+[Demo (JS)](https://www.mostlymaths.net/obsidian-preso-plugin/examples/Preso.html)
+[Demo (No JS)](https://www.mostlymaths.net/obsidian-preso-plugin/examples/Preso.css-only.html)
 
 Preso is a plugin for creating and previewing presentations directly within Obsidian. It provides a live, in-editor preview of your slides, allowing for a fast and fluid content creation workflow.
 
@@ -284,7 +284,7 @@ A version of Zach Gage's Pile up Poker (that you can play in Puzzmo). This is a 
 [Github](https://github.com/rberenguel/pinta)
 [Use](https://mostlymaths.net/pinta)
 [Example export](https://rberenguel.github.io/pintes/Slicer-whitepaper.html)
-[Demo video](https://www.youtube.com/watch?v=KDMp6_hqPv0)
+[Video](https://www.youtube.com/watch?v=KDMp6_hqPv0)
 
 Outline editor, written by me and Gemini.
 
