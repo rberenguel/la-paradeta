@@ -69,15 +69,23 @@ body {
 
 /* Styles for the translation text */
 .page-header .translation {
-  font-family: 'victormono';
+  font-family: "victormono";
   color: var(--text-color);
   font-style: italic;
   font-size: 0.9rem;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out, opacity 0.4s ease-out, margin-top 0.4s ease-out;
+  transition:
+    max-height 0.4s ease-out,
+    opacity 0.4s ease-out,
+    margin-top 0.4s ease-out;
   margin-top: 0;
+}
+
+.page-header .translation > .halp {
+  font-family: "Inter" !important;
+  font-style: normal;
 }
 
 /* Class to make the translation visible */

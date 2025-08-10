@@ -3,10 +3,9 @@ import createFilter from "./filter.js";
 const ICONOIRS = ["github", "play", "video", "use", "example", "demo"];
 
 document.addEventListener("DOMContentLoaded", () => {
-
-  document.getElementById('title-info-icon').addEventListener('click', () => {
-  document.getElementById('title-translation').classList.toggle('visible');
-});
+  document.getElementById("title-info-icon").addEventListener("click", () => {
+    document.getElementById("title-translation").classList.toggle("visible");
+  });
 
   const cardGrid = document.getElementById("card-grid");
   const tagColors = [
@@ -98,16 +97,20 @@ document.addEventListener("DOMContentLoaded", () => {
         const imageHtml = project.image
           ? `<img src="${project.image}" alt="${project.title} logo" class="card-image">`
           : `<div class="card-image placeholder-image"></div>`;
-          const allActions = () => {return project.actions.map((action) => {
-            const icon = action.text.toLowerCase().trim().split(" ")[0]
-            let iconoir = "iconoir-" + icon
-            if(!ICONOIRS.includes(icon)){
-              iconoir = ""
-            }
-            console.log(iconoir)
-            return `<a href="${action.url}" class="action-button ${iconoir}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${action.text}</a>`
-            }).join("")}
-          
+        const allActions = () => {
+          return project.actions
+            .map((action) => {
+              const icon = action.text.toLowerCase().trim().split(" ")[0];
+              let iconoir = "iconoir-" + icon;
+              if (!ICONOIRS.includes(icon)) {
+                iconoir = "";
+              }
+              console.log(iconoir);
+              return `<a href="${action.url}" class="action-button ${iconoir}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${action.text}</a>`;
+            })
+            .join("");
+        };
+
         return `
       <div class="card" data-title="${project.title}">
         ${imageHtml}
