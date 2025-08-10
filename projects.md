@@ -132,7 +132,7 @@ A Blockout (3d "Tetris") like-game built with Three.js
 
 A simple, turn-based roguelike prototype with a Western theme, built in JavaScript with rotjs.
 
-![](media/foragits.png)
+![](media/Foragits.png)
 
 #wip
 #browser
