@@ -13,6 +13,7 @@ Your goal is to survive 20 waves… and then keep going.
 #game
 #browser
 #pwa
+#star
 
 # [obsidian-fsrs-plugin]()
 
@@ -109,7 +110,7 @@ Mots is designed to be a quick game you can pick up, play for 5 minutes, and put
 #game
 #pwa
 #mobile
-#STAr
+#star
 
 # [blckt]()
 
