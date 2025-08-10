@@ -274,6 +274,8 @@ Analogy quiz based on the Analogy Question Dataset (CC-BY-NC-4.0). Answering can
 
 A version of Zach Gage's Pile up Poker (that you can play in Puzzmo). This is a simplified version I can play "locally".
 
+![](media/apoquerar.png)
+
 #browser
 #game
 #pwa
