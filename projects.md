@@ -393,3 +393,13 @@ A distraction-free writing device you can take with you anywhere (as long as you
 ![](media/foowrite.jpg)
 
 #pico
+
+# [obsidian-retolador-plugin]()
+
+[Github](https://github.com/rberenguel/obsidian-retolador-plugin)
+
+A modal, keyboard-driven plugin for fast and efficient highlighting in Obsidian.
+
+![](media/retolador.png)
+
+#obsidian
