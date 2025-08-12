@@ -403,3 +403,13 @@ A modal, keyboard-driven plugin for fast and efficient highlighting in Obsidian.
 ![](media/retolador.png)
 
 #obsidian
+
+# [obsidian-nanananana-leader-plugin]()
+
+[Github](https://github.com/rberenguel/obsidian-nanananana-leader-plugin)
+
+An Obsidian plugin that provides a "leader key" to trigger commands, creating a new layer of keyboard shortcuts.
+
+![](media/nanananana.png)
+
+#obsidian
