@@ -413,3 +413,11 @@ An Obsidian plugin that provides a "leader key" to trigger commands, creating a 
 ![](media/nanananana.png)
 
 #obsidian
+
+# [Tafaner]()
+
+[Github](https://github.com/rberenguel/tafaner)
+
+A Chrome extension that can call a local web server when you message yourself in Whatsapp Web.
+
+#chrome-extension
