@@ -421,3 +421,18 @@ An Obsidian plugin that provides a "leader key" to trigger commands, creating a 
 A Chrome extension that can call a local web server when you message yourself in Whatsapp Web.
 
 #chrome-extension
+
+# [Glof]()
+
+[Github](https://github.com/rberenguel/glof)
+[Play](https://mostlymaths.net/glof)
+
+It's like a somewhat famous mobile game I enjoyed. But also different, because I can tweak things around, or add things, or…
+
+![](media/glof.png)
+
+#browser
+#game
+#pwa
+#mobile
+#wip
