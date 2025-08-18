@@ -436,3 +436,11 @@ It's like a somewhat famous mobile game I enjoyed. But also different, because I
 #pwa
 #mobile
 #wip
+
+# [obsidian-cambrer-plugin]()
+
+[Github](https://github.com/rberenguel/obsidian-cambrer-plugin)
+
+An Obsidian plugin that serves notes in a local browser. It integrates my MetaP command palette to be able to search notes directly.
+
+#obsidian
