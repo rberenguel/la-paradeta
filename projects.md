@@ -444,3 +444,16 @@ It's like a somewhat famous mobile game I enjoyed. But also different, because I
 An Obsidian plugin that serves notes in a local browser. It integrates my MetaP command palette to be able to search notes directly.
 
 #obsidian
+
+# [Tesseŀla]()
+
+[Github](https://github.com/rberenguel/tessella)
+[Use](https://mostlymaths.net/tessella)
+
+A pixel camera offering an array of pixel art palettes to choose from. Needs to be installed as a PWA because the CSS styling requires full-screen.
+
+![](media/tessella.jpeg)
+
+#browser
+#pwa
+#mobile
