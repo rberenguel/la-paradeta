@@ -457,3 +457,29 @@ A pixel camera offering an array of pixel art palettes to choose from. Needs to 
 #browser
 #pwa
 #mobile
+
+# [Pomo]()
+
+[Github](https://github.com/rberenguel/pomo)
+
+A pomodoro timer for the M5Stack Core2, with rotation control.
+
+![](media/pomo.png)
+
+#m5stack
+#micropython
+#new
+
+# [Crossfire]()
+
+[Github](https://github.com/rberenguel/crossfire)
+[Use](https://mostlymaths.net/crossfire)
+
+A boardgame / turn based version of Destrier, i.e. asteroids + enemies. Includes the board game rules, this is just a playable prototype with a simple AI.
+
+![](media/crossfire.png)
+
+#browser
+#pwa
+#mobile
+#new

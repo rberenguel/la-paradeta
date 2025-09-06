@@ -129,30 +129,62 @@ export default function createFilter(config) {
   }
 
   /**
+   * Updates the browser's URL to reflect the current search text.
+   * @private
+   */
+  function _updateURL() {
+    const url = new URL(window.location);
+    if (searchText) {
+      url.searchParams.set("q", searchText);
+    } else {
+      url.searchParams.delete("q");
+    }
+    history.replaceState({}, "", url);
+  }
+
+  /**
    * Performs the filtering and calls the appropriate callbacks.
    * @private
    */
   function _doFilter() {
+    _updateURL();
     _updateIndicator();
     _updateClearButton();
 
-    const lowerCaseText = searchText.toLowerCase().trim();
-    if (!lowerCaseText) {
+    const trimmedText = searchText.trim();
+    if (!trimmedText) {
       onClear();
-      _updateCount(items.length); // Update count one last time on clear
+      _updateCount(items.length);
       return;
     }
 
+    const isTagSearch = trimmedText.startsWith("#");
+    const query = isTagSearch ? trimmedText.substring(1) : trimmedText;
+    const lowerCaseQuery = query.toLowerCase();
+
+    if (lowerCaseQuery === "") {
+      onClear();
+      _updateCount(items.length);
+      return;
+    }
+
+    const fieldsToSearch = isTagSearch ? ["tags"] : searchableFields;
+
     const filteredItems = items.filter((item) => {
-      return searchableFields.some((field) => {
+      return fieldsToSearch.some((field) => {
         const value = item[field];
         if (Array.isArray(value)) {
-          return value.some((element) =>
-            String(element).toLowerCase().includes(lowerCaseText),
-          );
+          return value.some((element) => {
+            const cleanElement = String(element)
+              .replace(/⚠️\s/g, "")
+              .replace(/⭐️/g, "star")
+              .trim()
+              .toLowerCase();
+            return cleanElement.includes(lowerCaseQuery);
+          });
         }
         if (typeof value === "string") {
-          return value.toLowerCase().includes(lowerCaseText);
+          return value.toLowerCase().includes(lowerCaseQuery);
         }
         return false;
       });

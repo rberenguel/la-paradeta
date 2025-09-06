@@ -169,8 +169,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".card-tag").forEach((tagElement) => {
       tagElement.addEventListener("click", (e) => {
         e.stopPropagation();
-        const tagText = e.target.textContent.replace(/⚠️\s|⭐️/g, "").trim();
-        filterInstance.applyFilter(tagText);
+        let rawTag = e.target.textContent.replace(/⚠️\s/g, "").trim();
+        if (rawTag === "⭐️") {
+          rawTag = "star";
+        }
+        filterInstance.applyFilter(`#${rawTag}`);
       });
     });
   }
@@ -245,6 +248,13 @@ document.addEventListener("DOMContentLoaded", () => {
       document.addEventListener("keydown", (e) =>
         filterInstance.handleKeyEvent(e),
       );
+
+      // Check for URL query parameter on page load
+      const urlParams = new URLSearchParams(window.location.search);
+      const query = urlParams.get("q");
+      if (query) {
+        filterInstance.applyFilter(query);
+      }
     } catch (error) {
       console.error("Could not fetch or parse projects:", error);
       cardGrid.innerHTML = "<p>Error loading projects.</p>";
