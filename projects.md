@@ -484,12 +484,13 @@ A boardgame / turn based version of Destrier, i.e. asteroids + enemies. Includes
 #mobile
 #new
 
-# [silex]()
+# [olivine]()
 
-[Github](https://github.com/rberenguel/silex)
+[Github](https://github.com/rberenguel/olivine)
 
-A Visual Studio Code extension that lets you open an Obsidian vault and work with it. Started as a Chrome extension, but for reasons is now Visual Studio Code. The key point is that it uses CodeMirror in a WebView, so it has a similar potential styling vs relying on "just" Monaco (VS Code editor).
+A PWA (and Visual Studio Code extension, but that is currently broken) that lets you open an Obsidian vault and work with it. Started as a Chrome extension, but for reasons is now Visual Studio Code. The key point is that it uses CodeMirror in a WebView, so it has a similar potential styling vs relying on "just" Monaco (VS Code editor).
 
 #vscode
+#pwa
 #wip
 #new
