@@ -488,9 +488,10 @@ A boardgame / turn based version of Destrier, i.e. asteroids + enemies. Includes
 
 [Github](https://github.com/rberenguel/olivine)
 
-A PWA (and Visual Studio Code extension, but that is currently broken) that lets you open an Obsidian vault and work with it. Started as a Chrome extension, but for reasons is now Visual Studio Code. The key point is that it uses CodeMirror in a WebView, so it has a similar potential styling vs relying on "just" Monaco (VS Code editor).
+A PWA that lets you open an Obsidian vault and work with it. Started as a Chrome extension, became a VS Code extension and now it is usable as either a standalone PWA (if you have file access in Chrome) or a backend powered PWA (if you need a backend to serve and edit the files).
 
-#vscode
+![](media/olivine.png)
+
 #pwa
 #wip
 #new
