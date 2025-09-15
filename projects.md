@@ -473,7 +473,7 @@ A pomodoro timer for the M5Stack Core2, with rotation control.
 # [Crossfire]()
 
 [Github](https://github.com/rberenguel/crossfire)
-[Use](https://mostlymaths.net/crossfire)
+[Play](https://mostlymaths.net/crossfire)
 
 A boardgame / turn based version of Destrier, i.e. asteroids + enemies. Includes the board game rules, this is just a playable prototype with a simple AI.
 
@@ -487,8 +487,9 @@ A boardgame / turn based version of Destrier, i.e. asteroids + enemies. Includes
 # [olivine]()
 
 [Github](https://github.com/rberenguel/olivine)
+[Use](https://mostlymaths.net/olivine)
 
-A PWA that lets you open an Obsidian vault and work with it. Started as a Chrome extension, became a VS Code extension and now it is usable as either a standalone PWA (if you have file access in Chrome) or a backend powered PWA (if you need a backend to serve and edit the files).
+A PWA that lets you open an Obsidian vault and work with it. Started as a Chrome extension, became a VS Code extension and now it is usable as either a standalone PWA (if you have file access in Chrome) or a backend powered PWA (if you need a backend to serve and edit the files, for that you need to clone the repo).
 
 ![](media/olivine.png)
 
