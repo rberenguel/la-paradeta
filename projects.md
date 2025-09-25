@@ -496,3 +496,15 @@ A PWA that lets you open an Obsidian vault and work with it. Started as a Chrome
 #pwa
 #wip
 #new
+
+# [srp]()
+
+[Github](https://github.com/rberenguel/srp)
+[Play](https://mostlymaths.net/srp)
+
+A 3D snake game. Should work on mobile, but it is not easy.
+
+#browser
+#pwa
+#mobile
+#new
