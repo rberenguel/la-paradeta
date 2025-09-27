@@ -513,7 +513,7 @@ A 3D snake game. Should work on mobile, but it is not easy. The controls make mo
 
 A Chrome extension to quickly get Gemini to summarise / read / synthesise tabs, using only the "normal" Gemini web app, no API required, just some copy-pasting.
 
-![](media/drecera.jpg)
+![](media/drecera.png)
 
 #chrome-extension
 #new
