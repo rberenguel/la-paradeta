@@ -468,7 +468,6 @@ A pomodoro timer for the M5Stack Core2, with rotation control.
 
 #m5stack
 #micropython
-#new
 
 # [Crossfire]()
 
@@ -482,7 +481,6 @@ A boardgame / turn based version of Destrier, i.e. asteroids + enemies. Includes
 #browser
 #pwa
 #mobile
-#new
 
 # [olivine]()
 
@@ -507,4 +505,15 @@ A 3D snake game. Should work on mobile, but it is not easy. The controls make mo
 #browser
 #pwa
 #mobile
+#new
+
+# [Drecera]()
+
+[Github](https://github.com/rberenguel/drecera)
+
+A Chrome extension to quickly get Gemini to summarise / read / synthesise tabs, using only the "normal" Gemini web app, no API required, just some copy-pasting.
+
+![](media/drecera.jpg)
+
+#chrome-extension
 #new
