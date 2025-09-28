@@ -517,3 +517,13 @@ A Chrome extension to quickly get Gemini to summarise / read / synthesise tabs, 
 
 #chrome-extension
 #new
+
+# [hed]()
+
+[Github](https://github.com/rberenguel/hed)
+[Video](https://youtu.be/x56SmT67LJw)
+
+A Chrome extension to highlight via regexes any word(s) in a web page, and to edit text efficiently as if using <code>ed</code>.
+
+#chrome-extension
+#new

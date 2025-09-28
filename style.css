@@ -205,6 +205,12 @@ body {
   margin-bottom: 1rem;
 }
 
+.card-description code {
+  color: #0c0;
+  font-family: "victormono";
+}
+
+
 .card-description p {
   margin: 0 0 0.5rem 0;
 }
