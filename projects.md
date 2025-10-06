@@ -14,6 +14,7 @@ Your goal is to survive 20 waves… and then keep going.
 #browser
 #pwa
 #star
+#202503
 
 # [obsidian-fsrs-plugin]()
 
@@ -22,6 +23,7 @@ Your goal is to survive 20 waves… and then keep going.
 A simple plugin for Obsidian using the FSRS (Free Spaced Repetition Scheduler) algorithm. Turn your notes into flashcards and review them directly within Obsidian.
 
 #obsidian
+#202505
 
 # [obsidian-clau-plugin]()
 
@@ -30,6 +32,7 @@ A simple plugin for Obsidian using the FSRS (Free Spaced Repetition Scheduler) a
 A quick switcher plugin for Obsidian with fuzzy search across all your notes.
 
 #obsidian
+#202507
 
 # [Best Before]()
 
@@ -38,6 +41,7 @@ A quick switcher plugin for Obsidian with fuzzy search across all your notes.
 Assign an expiry date to each browser tab; the extension will automatically close them to prevent clutter and keep your workspace tidy.
 
 #chrome-extension
+#202402
 
 # [Salta]()
 
@@ -49,6 +53,7 @@ A Chrome extension to visually jump across tabs. I wanted to see if I could do i
 ![](media/salta.jpg)
 
 #chrome-extension
+#202411
 
 # [NT]()
 
@@ -60,6 +65,7 @@ A very customizable _new tab_ extension for Chrome.
 ![](media/nt.png)
 
 #chrome-extension
+#202409
 
 # [obsidian-mirall-plugin]()
 
@@ -68,6 +74,7 @@ A very customizable _new tab_ extension for Chrome.
 Mirall is an Obsidian plugin designed to streamline the process of linking scattered notes and ideas back to a central page. It allows you to quickly tag lines in any note and aggregate them as transclusions in a designated file, keeping your context organized and accessible.
 
 #obsidian
+#202507
 
 # [obsidian-escoli-plugin]()
 
@@ -78,6 +85,7 @@ Escoli enhances Obsidian's editor by turning a specific subset of your footnotes
 ![](media/escoli.png)
 
 #obsidian
+#202508
 
 # [soma]()
 
@@ -94,6 +102,7 @@ Additional puzzles to build with the same pieces are available.
 #game
 #pwa
 #mobile
+#202507
 
 # [Mots]()
 
@@ -111,6 +120,7 @@ Mots is designed to be a quick game you can pick up, play for 5 minutes, and put
 #pwa
 #mobile
 #star
+#202506
 
 # [blckt]()
 
@@ -125,6 +135,7 @@ A Blockout (3d "Tetris") like-game built with Three.js
 #game
 #pwa
 #mobile
+#202507
 
 # [Foragits]()
 
@@ -142,6 +153,8 @@ A simple, turn-based roguelike prototype with a Western theme, built in JavaScri
 
 ---
 
+#202507
+
 # [obsidian-preso-plugin]()
 
 [Github](https://github.com/rberenguel/obsidian-preso-plugin)
@@ -153,6 +166,7 @@ Preso is a plugin for creating and previewing presentations directly within Obsi
 ![](media/preso.png)
 
 #obsidian
+#202507
 
 # [obsidian-roba-estesa-plugin]()
 
@@ -162,6 +176,7 @@ An Obsidian plugin to enhance user privacy through transient obfuscation and gra
 
 #obsidian
 #wip
+#202507
 
 # [obsidian-snipper-plugin]()
 
@@ -172,6 +187,7 @@ A simple plugin for Obsidian to embed a daily, editable snippet into your notes.
 ![](media/snipper.png)
 
 #obsidian
+#202506
 
 # [mikado]()
 
@@ -186,6 +202,7 @@ This project is a web-based brain training game designed to test and improve 3D 
 #game
 #pwa
 #mobile
+#202507
 
 # [obsidian-ergodic-plugin]()
 
@@ -194,6 +211,7 @@ This project is a web-based brain training game designed to test and improve 3D 
 Ergodic, an Obsidian plugin designed to help you rediscover your notes by opening a random one from your vault. Opens a random note, with options to exclude paths/tags and auto-jump to the next note.
 
 #obsidian
+#202507
 
 # [Clauer]()
 
@@ -209,6 +227,7 @@ A simple implementation of the Symbol Digit Modalities Test (SDMT), but slightly
 #pwa
 #mobile
 #wip
+#202506
 
 # [nb]()
 
@@ -223,6 +242,7 @@ A simple PWA for the n-back task, visual-only (I'm exploring audio for quadruple
 #game
 #pwa
 #mobile
+#202407
 
 # [Gofre]()
 
@@ -238,6 +258,7 @@ A variation on the Stroop selective attention test made with Gemini.
 #pwa
 #mobile
 #wip
+#202506
 
 # [Rotator]()
 
@@ -252,6 +273,7 @@ A fork from https://github.com/0xf00ff00f Match pairs of rotating shapes.
 #game
 #pwa
 #mobile
+#202202
 
 # [mussol]()
 
@@ -267,6 +289,7 @@ Analogy quiz based on the Analogy Question Dataset (CC-BY-NC-4.0). Answering can
 #pwa
 #mobile
 #wip
+#202506
 
 # [Apoquerar]()
 
@@ -281,6 +304,7 @@ A version of Zach Gage's Pile up Poker (that you can play in Puzzmo). This is a 
 #game
 #pwa
 #mobile
+#202505
 
 # [Pinta]()
 
@@ -295,6 +319,7 @@ Outline editor, written by me and Gemini.
 
 #browser
 #pwa
+#202505
 
 # [Suc]()
 
@@ -310,6 +335,7 @@ Distraction-free blocking of pages, with score. Triple click on the distraction 
 ![](media/suc.png)
 
 #chrome-extension
+#202506
 
 # [Goita]()
 
@@ -327,6 +353,7 @@ Can be used as a standalone PWA, too.
 #pwa
 #browser
 #wip
+#202411
 
 # [Mos]()
 
@@ -340,6 +367,7 @@ Pixel art editor
 #browser
 #pwa
 #wip
+#202505
 
 # [sis]()
 
@@ -354,6 +382,7 @@ Given a dice and several potential cube unfoldings, match the right one.
 #game
 #pwa
 #mobile
+#202505
 
 # [Garbuix]()
 
@@ -366,6 +395,7 @@ A live editor for a graphviz-like language (transpiles to dot on the fly), desig
 
 #pwa
 #browser
+#202501
 
 # [Shotgun Pollock]()
 
@@ -382,6 +412,7 @@ _Paint blobs have invaded the canvas. But you have your shotgun_.
 #game
 #pwa
 #mobile
+#202501
 
 # [foowrite]()
 
@@ -393,6 +424,7 @@ A distraction-free writing device you can take with you anywhere (as long as you
 ![](media/foowrite.jpg)
 
 #pico
+#202501
 
 # [obsidian-retolador-plugin]()
 
@@ -403,6 +435,7 @@ A modal, keyboard-driven plugin for fast and efficient highlighting in Obsidian.
 ![](media/retolador.png)
 
 #obsidian
+#202508
 
 # [obsidian-nanananana-leader-plugin]()
 
@@ -413,6 +446,7 @@ An Obsidian plugin that provides a "leader key" to trigger commands, creating a 
 ![](media/nanananana.png)
 
 #obsidian
+#202508
 
 # [Tafaner]()
 
@@ -421,6 +455,7 @@ An Obsidian plugin that provides a "leader key" to trigger commands, creating a 
 A Chrome extension that can call a local web server when you message yourself in Whatsapp Web.
 
 #chrome-extension
+#202508
 
 # [Glof]()
 
@@ -436,6 +471,7 @@ It's like a somewhat famous mobile game I enjoyed. But also different, because I
 #pwa
 #mobile
 #wip
+#202508
 
 # [obsidian-cambrer-plugin]()
 
@@ -444,6 +480,7 @@ It's like a somewhat famous mobile game I enjoyed. But also different, because I
 An Obsidian plugin that serves notes in a local browser. It integrates my MetaP command palette to be able to search notes directly.
 
 #obsidian
+#202508
 
 # [Tesseŀla]()
 
@@ -457,6 +494,7 @@ A pixel camera offering an array of pixel art palettes to choose from. Needs to 
 #browser
 #pwa
 #mobile
+#202508
 
 # [Pomo]()
 
@@ -468,6 +506,7 @@ A pomodoro timer for the M5Stack Core2, with rotation control.
 
 #m5stack
 #micropython
+#202509
 
 # [Crossfire]()
 
@@ -481,6 +520,7 @@ A boardgame / turn based version of Destrier, i.e. asteroids + enemies. Includes
 #browser
 #pwa
 #mobile
+#202509
 
 # [olivine]()
 
@@ -494,6 +534,7 @@ A PWA that lets you open an Obsidian vault and work with it. Started as a Chrome
 #pwa
 #wip
 #new
+#202509
 
 # [srp]()
 
@@ -506,6 +547,7 @@ A 3D snake game. Should work on mobile, but it is not easy. The controls make mo
 #pwa
 #mobile
 #new
+#202509
 
 # [Drecera]()
 
@@ -517,6 +559,7 @@ A Chrome extension to quickly get Gemini to summarise / read / synthesise tabs, 
 
 #chrome-extension
 #new
+#202509
 
 # [hed]()
 
@@ -527,6 +570,7 @@ A Chrome extension to highlight via regexes any word(s) in a web page, and to ed
 
 #chrome-extension
 #new
+#202509
 
 # [punt]()
 
@@ -540,3 +584,34 @@ Likely the <em>minimalistic-est</em> text editor. You always will have an empty 
 #pwa
 #wip
 #new
+#202509
+
+# [totxo]()
+
+[Github](https://github.com/rberenguel/totxo)
+[Play](https://mostlymaths.net/totxo)
+
+A 3D breakout game.
+
+![](media/totxo.png)
+
+#browser
+#pwa
+#mobile
+#new
+#202510
+
+# [puja]()
+
+[Github](https://github.com/rberenguel/puja)
+[Play](https://mostlymaths.net/puja)
+
+My own take on a classic: stacking blocks. It is a great meditative experience.
+
+![](media/puja.png)
+
+#browser
+#pwa
+#mobile
+#new
+#202510
