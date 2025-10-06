@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let allProjects = [];
   let filterInstance;
+  let currentSortOrder = "shuffled"; // 'shuffled', 'asc', 'desc'
+  let currentFilterText = "";
 
   const simpleHash = (str) => {
     let hash = 5381;
@@ -105,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
               if (!ICONOIRS.includes(icon)) {
                 iconoir = "";
               }
-              console.log(iconoir);
               return `<a href="${action.url}" class="action-button ${iconoir}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">${action.text}</a>`;
             })
             .join("");
@@ -122,8 +123,10 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="card-tags">
               ${project.tags
                 .map((tag) => {
-                  const colorIndex = simpleHash(tag) % tagColors.length;
-                  const color = tagColors[colorIndex];
+                  const isNumericTag = /^\d+$/.test(tag);
+                  const color = isNumericTag
+                    ? { bg: "#666666", text: "#c0caf5" }
+                    : tagColors[simpleHash(tag) % tagColors.length];
                   return `<span class="card-tag" style="background-color: ${color.bg}; color: ${color.text};">${tag}</span>`;
                 })
                 .join("")}
@@ -145,7 +148,58 @@ document.addEventListener("DOMContentLoaded", () => {
     addTagClickHandlers();
   };
 
-  // --- Filter Integration ---
+  const findDateTag = (project) => {
+    if (!project || !project.tags) return null;
+    return project.tags.find((tag) => /^\d{6}$/.test(tag));
+  };
+
+  const updateSortURL = () => {
+    const url = new URL(window.location);
+    if (currentSortOrder !== "shuffled") {
+      url.searchParams.set("sort", currentSortOrder);
+    } else {
+      url.searchParams.delete("sort");
+    }
+    history.replaceState({}, "", url);
+  };
+
+  const reorderAndRender = () => {
+    let projectsToRender = [...allProjects];
+    switch (currentSortOrder) {
+      case "asc":
+        projectsToRender.sort((a, b) => {
+          const dateA = findDateTag(a);
+          const dateB = findDateTag(b);
+          return !dateA || !dateB
+            ? 0
+            : parseInt(dateA, 10) - parseInt(dateB, 10);
+        });
+        break;
+      case "desc":
+        projectsToRender.sort((a, b) => {
+          const dateA = findDateTag(a);
+          const dateB = findDateTag(b);
+          return !dateA || !dateB
+            ? 0
+            : parseInt(dateB, 10) - parseInt(dateA, 10);
+        });
+        break;
+      default:
+        for (let i = projectsToRender.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [projectsToRender[i], projectsToRender[j]] = [
+            projectsToRender[j],
+            projectsToRender[i],
+          ];
+        }
+        break;
+    }
+    updateSortURL();
+    renderCards(projectsToRender);
+    if (filterInstance && currentFilterText) {
+      filterInstance.applyFilter(currentFilterText);
+    }
+  };
 
   function updateFilteredView(filteredProjects) {
     const visibleTitles = new Set(filteredProjects.map((p) => p.title));
@@ -187,71 +241,78 @@ document.addEventListener("DOMContentLoaded", () => {
       const projectBlocks = markdownText.trim().split(/\n(?=#\s)/);
       allProjects = projectBlocks.map(parseBlock).filter(Boolean);
 
-      for (let i = allProjects.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [allProjects[i], allProjects[j]] = [allProjects[j], allProjects[i]];
-      }
-
-      renderCards(allProjects);
-
-      // --- Create Filter UI Elements ---
       const filterIndicator = document.createElement("div");
       filterIndicator.id = "filter-indicator";
       document.body.appendChild(filterIndicator);
-
       const clearButton = document.createElement("div");
       clearButton.id = "filter-clear-button";
       clearButton.innerHTML = `<span class="close-icon">&#x2715;</span><span class="filter-text-label"></span>`;
       document.body.appendChild(clearButton);
-
       const countElement = document.createElement("div");
       countElement.id = "filter-count";
       document.body.appendChild(countElement);
 
-      // --- Mobile Specific UI ---
       const mobileSearchContainer = document.createElement("div");
       mobileSearchContainer.id = "mobile-search-container";
-      mobileSearchContainer.innerHTML = `
-        <input type="text" id="mobile-search-input" placeholder="Filter projects..." />
-      `;
+      mobileSearchContainer.innerHTML = `<input type="text" id="mobile-search-input" placeholder="Filter projects..." />`;
       document.body.appendChild(mobileSearchContainer);
       const mobileSearchInput = document.getElementById("mobile-search-input");
-
       const mobileSearchButton = document.createElement("button");
       mobileSearchButton.id = "mobile-search-button";
       mobileSearchButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>`;
       document.body.appendChild(mobileSearchButton);
-
       mobileSearchButton.addEventListener("click", () => {
         mobileSearchContainer.classList.toggle("visible");
         mobileSearchInput.focus();
       });
-
       mobileSearchInput.addEventListener("input", (e) => {
         filterInstance.applyFilter(e.target.value);
       });
 
-      // --- Initialize Filter ---
       filterInstance = createFilter({
         items: allProjects,
         searchableFields: ["title", "description", "tags"],
-        onFilter: updateFilteredView,
+        onFilter: (filtered, text) => {
+          currentFilterText = text;
+          updateFilteredView(filtered);
+        },
         onClear: () => {
+          currentFilterText = "";
           showAllCards();
-          mobileSearchInput.value = ""; // Also clear mobile input
+          mobileSearchInput.value = "";
         },
         indicatorElement: filterIndicator,
         clearButtonElement: clearButton,
         countElement: countElement,
       });
 
-      document.addEventListener("keydown", (e) =>
-        filterInstance.handleKeyEvent(e),
-      );
+      document.addEventListener("keydown", (e) => {
+        if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") {
+          return;
+        }
+        const isAscKey = e.key === "<" || e.key === ",";
+        const isDescKey = e.key === ">" || e.key === ".";
+        if (isAscKey || isDescKey) {
+          e.preventDefault();
+          const newSortOrder = isAscKey ? "asc" : "desc";
+          if (newSortOrder !== currentSortOrder) {
+            currentSortOrder = newSortOrder;
+            reorderAndRender();
+          }
+        } else {
+          filterInstance.handleKeyEvent(e);
+        }
+      });
 
-      // Check for URL query parameter on page load
       const urlParams = new URLSearchParams(window.location.search);
       const query = urlParams.get("q");
+      const sort = urlParams.get("sort");
+      if (sort === "asc" || sort === "desc") {
+        currentSortOrder = sort;
+      }
+
+      reorderAndRender();
+
       if (query) {
         filterInstance.applyFilter(query);
       }
