@@ -598,6 +598,22 @@ A 3D breakout game.
 #new
 #202510
 
+
+# [quid]()
+
+[Github](https://github.com/rberenguel/quid)
+[Play](https://mostlymaths.net/quid)
+
+A word guessing game based on semantic proximity (similar to <i>Semantle</i>). It can be played in several languages. It is extremely hard in all of them.
+
+![](media/quid.png)
+
+#browser
+#pwa
+#mobile
+#202508
+
+
 # [puja]()
 
 [Github](https://github.com/rberenguel/puja)
@@ -606,6 +622,21 @@ A 3D breakout game.
 My own take on a classic: stacking blocks. It is a great meditative experience.
 
 ![](media/puja.png)
+
+#browser
+#pwa
+#mobile
+#new
+#202510
+
+# [eixut]()
+
+[Github](https://github.com/rberenguel/eixut)
+[Play](https://mostlymaths.net/eixut)
+
+I tried replicating <em>Bleak Sword</em>'s touch controls in a slightly different setting. This is (or will be) some sort of random dungeon crawler. Plays best on mobile
+
+![](media/eixut.png)
 
 #browser
 #pwa
