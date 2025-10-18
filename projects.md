@@ -566,7 +566,6 @@ A Chrome extension to quickly get Gemini to summarise / read / synthesise tabs, 
 A Chrome extension to highlight via regexes any word(s) in a web page, and to edit text efficiently as if using <code>ed</code>.
 
 #chrome-extension
-#new
 #202509
 
 # [punt]()
@@ -580,7 +579,6 @@ Likely the <em>minimalistic-est</em> text editor. You always will have an empty 
 
 #pwa
 #wip
-#new
 #202509
 
 # [totxo]()
@@ -644,7 +642,7 @@ I tried replicating <em>Bleak Sword</em>'s touch controls in a slightly differen
 #new
 #202510
 
-# [eixut]()
+# [flux]()
 
 [Github](https://github.com/rberenguel/flux)
 [Play](https://mostlymaths.net/flux)
