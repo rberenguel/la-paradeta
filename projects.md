@@ -643,3 +643,45 @@ I tried replicating <em>Bleak Sword</em>'s touch controls in a slightly differen
 #mobile
 #new
 #202510
+
+# [eixut]()
+
+[Github](https://github.com/rberenguel/flux)
+[Play](https://mostlymaths.net/flux)
+
+A cross between two games.
+
+![](media/flux.png)
+
+#browser
+#pwa
+#mobile
+#new
+#202510
+
+# [yacme]()
+
+[Github](https://github.com/rberenguel/yacme)
+[Use](https://mostlymaths.net/yacme)
+
+Yet Another Concept Map Editor. A concept map editor using my <em>dot-like</em> syntax, but with a D3 backend (unlike Garbuix, which uses a WASM Graphviz backend). Can export to standalone HTML.
+
+![](media/yacme.png)
+
+#pwa
+#new
+#202510
+
+
+# [quadrants]()
+
+[Github](https://github.com/rberenguel/quadrants)
+[Use](https://mostlymaths.net/quadrants)
+
+An editor for "quadrants", like an Eisenhower matrix. Or a calendar. Can export to standalone HTML and has print-friendly styles in light mode.
+
+![](media/quadrants.png)
+
+#pwa
+#new
+#202510
