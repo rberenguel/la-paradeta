@@ -683,3 +683,17 @@ An editor for "quadrants", like an Eisenhower matrix. Or a calendar. Can export 
 #pwa
 #new
 #202510
+
+
+# [iconer]()
+
+[Github](https://github.com/rberenguel/misc-pwas/iconer)
+[Use](https://mostlymaths.net/misc-pwas/iconer)
+
+A generator of font icons for my Progressive Web Apps. Sometimes I just want <em>an</em> icon so I can make the thing installable. This makes it easier, even though html2canvas is sometimes buggy.
+
+![](media/iconer.png)
+
+#pwa
+#new
+#202510
