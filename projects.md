@@ -11,7 +11,6 @@ Your goal is to survive 20 waves… and then keep going.
 ![](media/destrier.png)
 
 #game
-#browser
 #pwa
 #star
 #202503
@@ -98,7 +97,6 @@ Additional puzzles to build with the same pieces are available.
 
 ![](media/soma.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -115,7 +113,6 @@ Mots is designed to be a quick game you can pick up, play for 5 minutes, and put
 
 ![](media/mots.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -131,7 +128,6 @@ A Blockout (3d "Tetris") like-game built with Three.js
 
 ![](media/blckt.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -147,7 +143,6 @@ A simple, turn-based roguelike prototype with a Western theme, built in JavaScri
 ![](media/Foragits.png)
 
 #wip
-#browser
 #game
 #pwa
 
@@ -198,7 +193,6 @@ This project is a web-based brain training game designed to test and improve 3D 
 
 ![](media/mikado.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -222,7 +216,6 @@ A simple implementation of the Symbol Digit Modalities Test (SDMT), but slightly
 
 ![](media/clauer.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -238,7 +231,6 @@ A simple PWA for the n-back task, visual-only (I'm exploring audio for quadruple
 
 ![](media/nb.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -253,7 +245,6 @@ A variation on the Stroop selective attention test made with Gemini.
 
 ![](media/gofre.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -269,7 +260,6 @@ A fork from https://github.com/0xf00ff00f Match pairs of rotating shapes.
 
 ![](media/rotator.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -284,7 +274,6 @@ Analogy quiz based on the Analogy Question Dataset (CC-BY-NC-4.0). Answering can
 
 ![](media/mussol.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -300,7 +289,6 @@ A version of Zach Gage's Pile up Poker (that you can play in Puzzmo). This is a 
 
 ![](media/apoquerar.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -317,7 +305,6 @@ Outline editor, written by me and Gemini.
 
 ![](media/pinta.png)
 
-#browser
 #pwa
 #202505
 
@@ -351,7 +338,6 @@ Can be used as a standalone PWA, too.
 
 #chrome-extension
 #pwa
-#browser
 #wip
 #202411
 
@@ -364,7 +350,6 @@ Pixel art editor
 
 ![](media/mos.png)
 
-#browser
 #pwa
 #wip
 #202505
@@ -378,7 +363,6 @@ Given a dice and several potential cube unfoldings, match the right one.
 
 ![](media/sis.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -394,7 +378,6 @@ A live editor for a graphviz-like language (transpiles to dot on the fly), desig
 ![](media/garbuix.png)
 
 #pwa
-#browser
 #202501
 
 # [Shotgun Pollock]()
@@ -408,7 +391,6 @@ _Paint blobs have invaded the canvas. But you have your shotgun_.
 
 ![](media/shotgun-pollock.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -466,7 +448,6 @@ It's like a somewhat famous mobile game I enjoyed. But also different, because I
 
 ![](media/glof.png)
 
-#browser
 #game
 #pwa
 #mobile
@@ -491,7 +472,6 @@ A pixel camera offering an array of pixel art palettes to choose from. Needs to 
 
 ![](media/tessella.jpeg)
 
-#browser
 #pwa
 #mobile
 #202508
@@ -517,7 +497,6 @@ A boardgame / turn based version of Destrier, i.e. asteroids + enemies. Includes
 
 ![](media/crossfire.png)
 
-#browser
 #pwa
 #mobile
 #202509
@@ -542,7 +521,6 @@ A PWA that lets you open an Obsidian vault and work with it. Started as a Chrome
 
 A 3D snake game. Best on mobile (it is where the controls make most sense), but it is not easy.
 
-#browser
 #pwa
 #mobile
 #202509
@@ -590,12 +568,10 @@ A 3D breakout game.
 
 ![](media/totxo.png)
 
-#browser
 #pwa
 #mobile
 #new
-#202510
-
+#202510.0
 
 # [quid]()
 
@@ -606,11 +582,9 @@ A word guessing game based on semantic proximity (similar to <i>Semantle</i>). I
 
 ![](media/quid.png)
 
-#browser
 #pwa
 #mobile
 #202508
-
 
 # [puja]()
 
@@ -621,11 +595,9 @@ My own take on a classic: stacking blocks. It is a great meditative experience.
 
 ![](media/puja.png)
 
-#browser
 #pwa
 #mobile
-#new
-#202510
+#202510.1
 
 # [eixut]()
 
@@ -636,11 +608,9 @@ I tried replicating <em>Bleak Sword</em>'s touch controls in a slightly differen
 
 ![](media/eixut.png)
 
-#browser
 #pwa
 #mobile
-#new
-#202510
+#202510.2
 
 # [flux]()
 
@@ -651,11 +621,9 @@ A cross between two games.
 
 ![](media/flux.png)
 
-#browser
 #pwa
 #mobile
-#new
-#202510
+#202510.3
 
 # [yacme]()
 
@@ -667,9 +635,7 @@ Yet Another Concept Map Editor. A concept map editor using my <em>dot-like</em> 
 ![](media/yacme.png)
 
 #pwa
-#new
-#202510
-
+#202510.4
 
 # [quadrants]()
 
@@ -681,9 +647,7 @@ An editor for "quadrants", like an Eisenhower matrix. Or a calendar. Can export 
 ![](media/quadrants.png)
 
 #pwa
-#new
-#202510
-
+#202510.5
 
 # [iconer]()
 
@@ -695,5 +659,29 @@ A generator of font icons for my Progressive Web Apps. Sometimes I just want <em
 ![](media/iconer.png)
 
 #pwa
-#new
-#202510
+#202510.6
+
+# [tong]()
+
+[Github](https://github.com/rberenguel/tong)
+[Play](https://mostlymaths.net/tong)
+[Video](https://youtu.be/kYTBZxOcavw)
+
+A cross of tennis and Pong that has a SFW name. Still needs work to be playable on mobile.
+
+![](media/tong.png)
+
+#pwa
+#202510.7
+
+# [soro]()
+
+[Github](https://github.com/rberenguel/soro)
+[Use](https://mostlymaths.net/soro)
+
+A soroban (abacus) with haptic effects on iPhone (should also have them on Android, but that depends on silent mode). Has also a tutorial to learn.
+
+![](media/soro.png)
+
+#pwa
+#202510.8

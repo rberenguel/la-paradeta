@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
       )
       .join("");
     const imageMatch = remainingBlock.match(/!\[.*\]\((.*?)\)/);
-    const tagMatches = remainingBlock.match(/#([a-zA-Z0-9_-]+)/g);
+    const tagMatches = remainingBlock.match(/#([\.a-zA-Z0-9_-]+)/g);
     let tags = tagMatches
       ? tagMatches.map((t) => t.substring(1).replace(/-/g, " "))
       : [];
@@ -122,11 +122,15 @@ document.addEventListener("DOMContentLoaded", () => {
             </h2>
             <div class="card-tags">
               ${project.tags
-                .map((tag) => {
-                  const isNumericTag = /^\d+$/.test(tag);
+                .map((tag_) => {
+                  let tag = tag_;
+                  const isNumericTag = /^\d{6}/.test(tag_.split(".")[0]);
                   const color = isNumericTag
                     ? { bg: "#666666", text: "#c0caf5" }
                     : tagColors[simpleHash(tag) % tagColors.length];
+                  if (isNumericTag) {
+                    tag = tag_.split(".")[0];
+                  }
                   return `<span class="card-tag" style="background-color: ${color.bg}; color: ${color.text};">${tag}</span>`;
                 })
                 .join("")}
@@ -146,11 +150,13 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .join("");
     addTagClickHandlers();
+    addTagTitles();
   };
 
   const findDateTag = (project) => {
     if (!project || !project.tags) return null;
-    return project.tags.find((tag) => /^\d{6}$/.test(tag));
+    console.log(project.tags);
+    return project.tags.find((tag) => /^\d{6}/.test(tag));
   };
 
   const updateSortURL = () => {
@@ -170,18 +176,20 @@ document.addEventListener("DOMContentLoaded", () => {
         projectsToRender.sort((a, b) => {
           const dateA = findDateTag(a);
           const dateB = findDateTag(b);
+          console.log(dateA);
           return !dateA || !dateB
             ? 0
-            : parseInt(dateA, 10) - parseInt(dateB, 10);
+            : parseFloat(dateA, 10) - parseFloat(dateB, 10);
         });
         break;
       case "desc":
         projectsToRender.sort((a, b) => {
           const dateA = findDateTag(a);
           const dateB = findDateTag(b);
+          console.log(dateA);
           return !dateA || !dateB
             ? 0
-            : parseInt(dateB, 10) - parseInt(dateA, 10);
+            : parseFloat(dateB, 10) - parseFloat(dateA, 10);
         });
         break;
       default:
@@ -229,6 +237,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         filterInstance.applyFilter(`#${rawTag}`);
       });
+    });
+  }
+
+  function addTagTitles() {
+    document.querySelectorAll(".card-tag").forEach((tagElement) => {
+      if (tagElement.textContent === "pwa") {
+        tagElement.title =
+          "PWA: Progressive Web App (installable browser application)";
+      }
     });
   }
 
