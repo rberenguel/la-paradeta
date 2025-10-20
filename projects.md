@@ -145,9 +145,6 @@ A simple, turn-based roguelike prototype with a Western theme, built in JavaScri
 #wip
 #game
 #pwa
-
----
-
 #202507
 
 # [obsidian-preso-plugin]()
@@ -219,7 +216,6 @@ A simple implementation of the Symbol Digit Modalities Test (SDMT), but slightly
 #game
 #pwa
 #mobile
-#wip
 #202506
 
 # [nb]()
@@ -248,7 +244,6 @@ A variation on the Stroop selective attention test made with Gemini.
 #game
 #pwa
 #mobile
-#wip
 #202506
 
 # [Rotator]()
@@ -277,7 +272,6 @@ Analogy quiz based on the Analogy Question Dataset (CC-BY-NC-4.0). Answering can
 #game
 #pwa
 #mobile
-#wip
 #202506
 
 # [Apoquerar]()
@@ -318,6 +312,8 @@ Make work less boring.
 Explosions on marking as read / archiving in GMail.
 
 Distraction-free blocking of pages, with score. Triple click on the distraction free overlay to remove it.
+
+Tracks your activity across tabs to present you with a full-day view.
 
 ![](media/suc.png)
 
@@ -499,6 +495,7 @@ A boardgame / turn based version of Destrier, i.e. asteroids + enemies. Includes
 
 #pwa
 #mobile
+#game
 #202509
 
 # [olivine]()
@@ -523,6 +520,7 @@ A 3D snake game. Best on mobile (it is where the controls make most sense), but 
 
 #pwa
 #mobile
+#game
 #202509
 
 # [Drecera]()
@@ -570,7 +568,7 @@ A 3D breakout game.
 
 #pwa
 #mobile
-#new
+#game
 #202510.0
 
 # [quid]()
@@ -584,6 +582,7 @@ A word guessing game based on semantic proximity (similar to <i>Semantle</i>). I
 
 #pwa
 #mobile
+#game
 #202508
 
 # [puja]()
@@ -597,6 +596,7 @@ My own take on a classic: stacking blocks. It is a great meditative experience.
 
 #pwa
 #mobile
+#game
 #202510.1
 
 # [eixut]()
@@ -610,6 +610,7 @@ I tried replicating <em>Bleak Sword</em>'s touch controls in a slightly differen
 
 #pwa
 #mobile
+#game
 #202510.2
 
 # [flux]()
@@ -623,6 +624,7 @@ A cross between two games.
 
 #pwa
 #mobile
+#game
 #202510.3
 
 # [yacme]()
@@ -672,6 +674,7 @@ A cross of tennis and Pong that has a SFW name. Still needs work to be playable 
 ![](media/tong.png)
 
 #pwa
+#game
 #202510.7
 
 # [soro]()
