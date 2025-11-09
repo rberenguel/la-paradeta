@@ -688,3 +688,15 @@ A soroban (abacus) with haptic effects on iPhone (should also have them on Andro
 
 #pwa
 #202510.8
+
+# [titola]()
+
+[Github](https://github.com/rberenguel/titola)
+[Use](https://mostlymaths.net/titola)
+
+A browser-based tool for adding text and image overlays to GIFs and videos, with per-frame positioning and animation support.
+
+![](media/titola.png)
+
+#pwa
+#202510.9
