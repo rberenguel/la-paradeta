@@ -700,3 +700,17 @@ A browser-based tool for adding text and image overlays to GIFs and videos, with
 
 #pwa
 #202510.9
+
+# [fluxstream]()
+
+[Github](https://github.com/rberenguel/fluxstream)
+[Play](https://mostlymaths.net/fluxstream)
+
+A cross between three games.
+
+![](media/fluxstream.png)
+
+#pwa
+#mobile
+#game
+#202511.0
