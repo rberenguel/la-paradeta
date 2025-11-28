@@ -714,3 +714,17 @@ A cross between three games.
 #mobile
 #game
 #202511.0
+
+# [Magrana]()
+
+[Github](https://github.com/rberenguel/magrana)
+[Play](https://mostlymaths.net/magrana)
+
+An anagram puzzle, vaguely based on mots.
+
+![](media/magrana.png)
+
+#pwa
+#mobile
+#game
+#202511.1
