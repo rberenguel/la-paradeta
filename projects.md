@@ -728,3 +728,17 @@ An anagram puzzle, vaguely based on mots.
 #mobile
 #game
 #202511.1
+
+# [Silence]()
+
+[Github](https://github.com/rberenguel/silence)
+[Play](https://mostlymaths.net/silence)
+
+Cancel noise using destructive interference.
+
+![](media/silence.png)
+
+#pwa
+#mobile
+#game
+#202511.1
