@@ -742,3 +742,29 @@ Cancel noise using destructive interference.
 #mobile
 #game
 #202511.2
+
+# [Eink BG]()
+
+[Github](https://github.com/rberenguel/misc-pwas/tree/main/eink-bg)
+[Use](https://mostlymaths.net/misc-pwas/eink-bg)
+
+Prepare images for e-ink displays with pan/zoom/rotate controls, brightness and contrast adjustment, and multiple dithering algorithms (Floyd-Steinberg, Atkinson, Bayer, blue noise). Supports various e-reader formats (XTEINK, Kindle) with portrait/landscape presets. Export as JPG or BMP.
+
+![](media/eink-cover.png)
+
+#pwa
+#mobile
+#202512.0
+
+# [2x4]()
+
+[Github](https://github.com/rberenguel/2x4)
+[Use](https://mostlymaths.net/2x4)
+
+A browser-based converter for the Xteink X4 e-reader (480×800). Transforms EPUBs, ArXiv papers, and web articles into optimized XTC/XTH formats with 4-level grayscale and intelligent pagination. Available as both a standalone PWA and Chrome extension for seamless article capture.
+
+![](media/2x4.png)
+
+#pwa
+#chrome-extension
+#202512.1
