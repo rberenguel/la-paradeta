@@ -147,6 +147,7 @@ export default function createFilter(config) {
           return value.some((element) => {
             const cleanElement = String(element)
               .replace(/⚠️\s/g, "")
+              .replace(/🪦\s/g, "")
               .replace(/⭐️/g, "star")
               .trim()
               .toLowerCase();

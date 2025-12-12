@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
       : [];
     tags = tags.map((t) => {
       if (t.toLowerCase().trim() === "wip") return `⚠️ ${t}`;
+      if (t.toLowerCase().trim() === "rip") return `🪦 ${t}`;
       if (t.toLowerCase().trim() === "star") return `⭐️`;
       return t;
     });
@@ -231,7 +232,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".card-tag").forEach((tagElement) => {
       tagElement.addEventListener("click", (e) => {
         e.stopPropagation();
-        let rawTag = e.target.textContent.replace(/⚠️\s/g, "").trim();
+        let rawTag = e.target.textContent
+          .replace(/⚠️\s/g, "")
+          .replace(/🪦\s/g, "")
+          .trim();
         if (rawTag === "⭐️") {
           rawTag = "star";
         }

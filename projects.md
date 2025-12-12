@@ -505,10 +505,12 @@ A boardgame / turn based version of Destrier, i.e. asteroids + enemies. Includes
 
 A PWA that lets you open an Obsidian vault and work with it. Started as a Chrome extension, became a VS Code extension and now it is usable as either a standalone PWA (if you have file access in Chrome) or a backend powered PWA (if you need a backend to serve and edit the files, for that you need to clone the repo).
 
+No longer updated, but it provided a lot of good ideas for other projects.
+
 ![](media/olivine.png)
 
 #pwa
-#wip
+#rip
 #202509
 
 # [srp]()
@@ -551,10 +553,11 @@ A Chrome extension to highlight via regexes any word(s) in a web page, and to ed
 
 Likely the <em>minimalistic-est</em> text editor. You always will have an empty page, editing is via a command palette (where ed-like commands can be issued) and you only can briefly read your document (also using ed-like syntax). Use h to get help.
 
+This became the hed extension, eventually.
+
 ![](media/punt.png)
 
 #pwa
-#wip
 #202509
 
 # [totxo]()
