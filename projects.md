@@ -771,8 +771,8 @@ A browser-based converter for the Xteink X4 e-reader (480×800). Transforms EPUB
 
 # [Puzzling]()
 
-[Github](https://github.com/rberenguel/misc-pwas/tree/gh-pages/puzzling)
-[Use](https://mostlymaths.net/misc-pwas/puzzling)
+[Github](https://github.com/rberenguel/puzzling)
+[Use](https://mostlymaths.net/puzzling)
 
 Black and white puzzles you can convert to puzzle books for your Xteink X4 e-reader. Has a maze generator and two logic puzzles.
 
