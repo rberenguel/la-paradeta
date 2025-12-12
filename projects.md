@@ -734,7 +734,7 @@ An anagram puzzle, vaguely based on mots.
 [Github](https://github.com/rberenguel/silence)
 [Play](https://mostlymaths.net/silence)
 
-Cancel noise using destructive interference.
+Puzzle game. Cancel noise using destructive interference. It is way harder than it looks.
 
 ![](media/silence.png)
 
@@ -745,7 +745,7 @@ Cancel noise using destructive interference.
 
 # [Eink BG]()
 
-[Github](https://github.com/rberenguel/misc-pwas/tree/main/eink-bg)
+[Github](https://github.com/rberenguel/misc-pwas/tree/gh-pages/eink-bg)
 [Use](https://mostlymaths.net/misc-pwas/eink-bg)
 
 Prepare images for e-ink displays with pan/zoom/rotate controls, brightness and contrast adjustment, and multiple dithering algorithms (Floyd-Steinberg, Atkinson, Bayer, blue noise). Supports various e-reader formats (XTEINK, Kindle) with portrait/landscape presets. Export as JPG or BMP.
@@ -768,3 +768,29 @@ A browser-based converter for the Xteink X4 e-reader (480×800). Transforms EPUB
 #pwa
 #chrome-extension
 #202512.1
+
+# [Puzzling]()
+
+[Github](https://github.com/rberenguel/misc-pwas/tree/gh-pages/puzzling)
+[Use](https://mostlymaths.net/misc-pwas/puzzling)
+
+Black and white puzzles you can convert to puzzle books for your Xteink X4 e-reader. Has a maze generator and two logic puzzles.
+
+![](media/puzzling.png)
+
+#pwa
+#mobile
+#202512.2
+
+# [Fiat Lux]()
+
+[Github](https://github.com/rberenguel/fiat-lux)
+[Use](https://mostlymaths.net/fiat-lux)
+
+An idle incremental game.
+
+![](media/fiat-lux.png)
+
+#pwa
+#wip
+#202512.3

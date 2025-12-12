@@ -263,11 +263,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.appendChild(filterIndicator);
       const clearButton = document.createElement("div");
       clearButton.id = "filter-clear-button";
-      clearButton.innerHTML = `<span class="close-icon">&#x2715;</span><span class="filter-text-label"></span>`;
+      clearButton.innerHTML = `<span class="close-icon">&#x2715;</span><span class="filter-text-label"></span><span class="filter-count-label"></span>`;
       document.body.appendChild(clearButton);
-      const countElement = document.createElement("div");
-      countElement.id = "filter-count";
-      document.body.appendChild(countElement);
 
       const mobileSearchContainer = document.createElement("div");
       mobileSearchContainer.id = "mobile-search-container";
@@ -300,7 +297,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         indicatorElement: filterIndicator,
         clearButtonElement: clearButton,
-        countElement: countElement,
       });
 
       document.addEventListener("keydown", (e) => {

@@ -344,24 +344,13 @@ body {
   text-overflow: ellipsis;
 }
 
-/* --- Filter Count --- */
-#filter-count {
-  position: fixed;
-  top: 1.5rem;
-  left: 1.5rem;
-  background-color: var(--card-bg);
-  color: var(--text-color);
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
-  display: none;
-  opacity: 0;
-  z-index: 1000;
-  transition: opacity 0.4s ease-out;
-  pointer-events: none;
+.filter-count-label {
+  font-size: 0.5rem;
+  opacity: 0.8;
+  margin-top: 2px;
 }
+
+/* --- Filter Count --- */
 
 /* --- Mobile Search UI --- */
 #mobile-search-button {

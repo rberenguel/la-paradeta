@@ -7,12 +7,10 @@
  * @param {function(): void} config.onClear - Callback to run when the filter is cleared.
  * @param {HTMLElement} [config.indicatorElement] - Optional element to display the current filter text.
  * @param {HTMLElement} [config.clearButtonElement] - Optional element to clear the active filter.
- * @param {HTMLElement} [config.countElement] - Optional element to display the count of filtered items.
  */
 export default function createFilter(config) {
   let searchText = "";
   let indicatorTimeout;
-  let countTimeout;
 
   const {
     items,
@@ -21,8 +19,10 @@ export default function createFilter(config) {
     onClear,
     indicatorElement,
     clearButtonElement,
-    countElement,
   } = config;
+
+  // We track the filtered count to display it in the clear button
+  let lastFilteredCount = items ? items.length : 0;
 
   /**
    * Manages the visibility and content of the clear button using opacity transitions.
@@ -32,9 +32,12 @@ export default function createFilter(config) {
     if (!clearButtonElement) return;
 
     const label = clearButtonElement.querySelector(".filter-text-label");
+    const countLabel = clearButtonElement.querySelector(".filter-count-label");
 
     if (searchText) {
       if (label) label.textContent = searchText;
+      if (countLabel)
+        countLabel.textContent = `${lastFilteredCount} / ${items.length}`;
       clearButtonElement.style.display = "flex";
       setTimeout(() => {
         clearButtonElement.style.opacity = "1";
@@ -50,6 +53,7 @@ export default function createFilter(config) {
           ) {
             clearButtonElement.style.display = "none";
             if (label) label.textContent = "";
+            if (countLabel) countLabel.textContent = "";
           }
         },
         { once: true },
@@ -93,42 +97,6 @@ export default function createFilter(config) {
   }
 
   /**
-   * Displays the current item count and handles its fade-out.
-   * @param {number} filteredCount - The number of items that match the filter.
-   * @private
-   */
-  function _updateCount(filteredCount) {
-    if (!countElement) return;
-
-    clearTimeout(countTimeout);
-
-    if (searchText) {
-      countElement.textContent = `${filteredCount} / ${items.length}`;
-      countElement.style.display = "block";
-
-      setTimeout(() => {
-        countElement.style.opacity = "1";
-      }, 10);
-
-      countTimeout = setTimeout(() => {
-        countElement.style.opacity = "0";
-        countElement.addEventListener(
-          "transitionend",
-          () => {
-            if (countElement.style.opacity === "0") {
-              countElement.style.display = "none";
-            }
-          },
-          { once: true },
-        );
-      }, 1200);
-    } else {
-      countElement.style.opacity = "0";
-      countElement.style.display = "none";
-    }
-  }
-
-  /**
    * Updates the browser's URL to reflect the current search text.
    * @private
    */
@@ -154,7 +122,8 @@ export default function createFilter(config) {
     const trimmedText = searchText.trim();
     if (!trimmedText) {
       onClear();
-      _updateCount(items.length);
+      lastFilteredCount = items.length;
+      _updateClearButton();
       return;
     }
 
@@ -164,7 +133,8 @@ export default function createFilter(config) {
 
     if (lowerCaseQuery === "") {
       onClear();
-      _updateCount(items.length);
+      lastFilteredCount = items.length;
+      _updateClearButton();
       return;
     }
 
@@ -190,7 +160,8 @@ export default function createFilter(config) {
       });
     });
 
-    _updateCount(filteredItems.length);
+    lastFilteredCount = filteredItems.length;
+    _updateClearButton();
     onFilter(filteredItems, searchText);
   }
 
