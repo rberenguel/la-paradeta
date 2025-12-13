@@ -783,6 +783,7 @@ Black and white puzzles you can convert to puzzle books for your Xteink X4 e-rea
 
 #pwa
 #mobile
+#game
 #202512.2
 
 # [Fiat Lux]()
@@ -795,5 +796,22 @@ An idle incremental game.
 ![](media/fiat-lux.png)
 
 #pwa
+#game
 #wip
 #202512.3
+
+
+# [Chroma]()
+
+[Github](https://github.com/rberenguel/chroma)
+[Play](https://mostlymaths.net/chroma)
+
+Game based on <a href="https://en.wikipedia.org/wiki/Bit_Generations#Coloris">Coloris for the Game Boy Advance</a>
+
+![](media/chroma.png)
+
+#pwa
+#game
+#mobile
+#202512.4
+

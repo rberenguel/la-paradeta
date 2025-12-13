@@ -216,6 +216,19 @@ body {
   font-family: "victormono";
 }
 
+.card-description a {
+  text-decoration: none;
+  border-bottom: 1px dotted #0cc;
+  font-style: italic;
+  font-size: 90%;
+  color: #0cc;
+}
+
+.card-description a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #0cc;
+}
+
 .card-description p {
   margin: 0 0 0.5rem 0;
 }
