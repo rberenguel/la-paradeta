@@ -72,7 +72,13 @@ document.addEventListener("DOMContentLoaded", () => {
       )
       .join("");
     const imageMatch = remainingBlock.match(/!\[.*\]\((.*?)\)/);
-    const tagMatches = remainingBlock.match(/#([\.a-zA-Z0-9_-]+)/g);
+    const blockLines = remainingBlock.split("\n");
+    let tagMatches = [];
+    blockLines.map(
+      (b) => (tagMatches = tagMatches.concat(b.match(/^#([\.a-zA-Z0-9_-]+)/g))),
+    );
+    tagMatches = tagMatches.filter(Boolean);
+    console.log(tagMatches);
     let tags = tagMatches
       ? tagMatches.map((t) => t.substring(1).replace(/-/g, " "))
       : [];

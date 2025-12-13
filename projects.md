@@ -800,7 +800,6 @@ An idle incremental game.
 #wip
 #202512.3
 
-
 # [Chroma]()
 
 [Github](https://github.com/rberenguel/chroma)
@@ -814,4 +813,3 @@ Game based on <a href="https://en.wikipedia.org/wiki/Bit_Generations#Coloris">Co
 #game
 #mobile
 #202512.4
-
