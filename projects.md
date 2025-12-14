@@ -791,7 +791,7 @@ Black and white puzzles you can convert to puzzle books for your Xteink X4 e-rea
 [Github](https://github.com/rberenguel/fiat-lux)
 [Play](https://mostlymaths.net/fiat-lux)
 
-An idle incremental game.
+An <a href="https://en.wikipedia.org/wiki/Incremental_game">idle incremental game</a>.
 
 ![](media/fiat-lux.png)
 
