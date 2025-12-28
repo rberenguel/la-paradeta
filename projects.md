@@ -813,3 +813,17 @@ Game based on <a href="https://en.wikipedia.org/wiki/Bit_Generations#Coloris">Co
 #game
 #mobile
 #202512.4
+
+# [GB2GO]()
+
+[Github](https://github.com/rberenguel/gb2go)
+[Use](https://mostlymaths.net/gb2go)
+
+A WIP web-based IDE to write C for the original Gameboy. Has the full build toolchain available on the browser. Still has several missing features
+
+![](media/gb2go.png)
+
+#pwa
+#wip
+#mobile
+#202512.5
