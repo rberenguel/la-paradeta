@@ -827,3 +827,17 @@ A WIP web-based IDE to write C for the original Gameboy. Has the full build tool
 #wip
 #mobile
 #202512.5
+
+# [Tasca]()
+
+[Github](https://github.com/rberenguel/tasca)
+[Use](https://mostlymaths.net/tasca)
+
+A PWA inspired by <a href="https://taskwarrior.org/">Taskwarrior</a>, local-only.
+
+![](media/tasca.png)
+
+#pwa
+#wip
+#mobile
+#202512.6
