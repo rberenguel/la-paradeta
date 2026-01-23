@@ -841,3 +841,14 @@ A PWA inspired by <a href="https://taskwarrior.org/">Taskwarrior</a>, local-only
 #star
 #mobile
 #202512.6
+
+# [Lloro]()
+
+[Github](https://github.com/rberenguel/lloro)
+
+A Chrome extension that lets you ask questions about the current page via Gemini CLI using the ACP (Agent Client Protocol).
+
+![](media/lloro.png)
+
+#chrome-extension
+#202601.0
