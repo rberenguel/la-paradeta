@@ -852,3 +852,17 @@ A Chrome extension that lets you ask questions about the current page via Gemini
 
 #chrome-extension
 #202601.0
+
+# [Trama]()
+
+[Github](https://github.com/rberenguel/trama)
+[Use](https://mostlymaths.net/trama)
+
+A PWA heavily inspired by <a href="https://tixy.land/">tixy.land</a> and <a href="https://www.lexaloffle.com/pico-8.php">pico-8</a>. Creative coding and hopefully game prototyping quickly. Very much work in progress, I still need to use it more to see what the rougher edges are. Comes with a couple example games, and has gamepad controls working (and customizable)
+
+![](media/trama.png)
+
+#pwa
+#wip
+#mobile
+#202601.1
