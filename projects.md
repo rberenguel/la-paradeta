@@ -866,3 +866,12 @@ A PWA heavily inspired by <a href="https://tixy.land/">tixy.land</a> and <a href
 #wip
 #mobile
 #202601.1
+
+# [Titella]()
+
+[Github](https://github.com/rberenguel/titella)
+
+A Chrome extension to automate demo recordings of single page applications. Otherwise it's hard to show Tasca!
+
+#chrome-extension
+#202601.2
