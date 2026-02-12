@@ -875,3 +875,17 @@ A Chrome extension to automate demo recordings of single page applications. Othe
 
 #chrome-extension
 #202601.2
+
+# [Tanmateix]()
+
+[Github](https://github.com/rberenguel/tanmateix)
+[Play](https://mostlymaths.net/tanmateix)
+
+A fast-paced logic puzzle game where you evaluate whether conclusions logically follow from given premises.
+
+![](media/tanmateix.png)
+
+#game
+#pwa
+#mobile
+#202602.0
