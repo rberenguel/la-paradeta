@@ -889,3 +889,17 @@ A fast-paced logic puzzle game where you evaluate whether conclusions logically 
 #pwa
 #mobile
 #202602.0
+
+# [Murder, it wrote]()
+
+[Github](https://github.com/rberenguel/murder-it-wrote)
+[Play](https://mostlymaths.net/murder-it-wrote)
+
+A murder mystery generator using an ad-hoc constraint solver.
+
+![](media/murder-it-wrote.png)
+
+#game
+#pwa
+#mobile
+#202602.1
