@@ -913,3 +913,16 @@ A Pomodoro-ish rhythmic visual timer ported to an ESP32-C3 with a circular TFT d
 #esp32
 #arduino
 #202602.2
+
+# [WoMbat]()
+
+[Github](https://github.com/rberenguel/wombat)
+[Play](https://mostlymaths.net/wombat)
+
+A browser-based distributed systems puzzle game. Each round procedurally generates a small service architecture, applies a stressor, and asks you to predict where it fails before revealing the simulation result.
+
+![](media/wombat.png)
+
+#game
+#pwa
+#202602.3
