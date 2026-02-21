@@ -903,3 +903,13 @@ A murder mystery generator using an ad-hoc constraint solver.
 #pwa
 #mobile
 #202602.1
+
+# [BLE Blinker]()
+
+[Github](https://github.com/rberenguel/blinker-v2)
+
+A Pomodoro-ish rhythmic visual timer ported to an ESP32-C3 with a circular TFT display. A smooth glowing orb "breathes" at 150 BPM decaying to 54 BPM over the session, then flashes white five times when done. Controlled wirelessly via Web Bluetooth (BLE) to set duration, brightness and colors; a physical BOOT button fallback is also available. Pairs well with [nt](https://mostlymaths.net/nt) as a dashboard controller.
+
+#esp32
+#arduino
+#202602.2
