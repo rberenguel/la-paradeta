@@ -926,3 +926,13 @@ A browser-based distributed systems puzzle game. Each round procedurally generat
 #game
 #pwa
 #202602.3
+
+# [Diag]()
+
+[Github](https://github.com/rberenguel/diag)
+[Use](https://mostlymaths.net/diag)
+
+A keyboard-driven vector diagramming tool. Think napkin sketches: fast to draw, fine to throw away. Sister project to Goita and Pinta.
+
+#pwa
+#202602.4
