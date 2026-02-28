@@ -934,5 +934,18 @@ A browser-based distributed systems puzzle game. Each round procedurally generat
 
 A keyboard-driven vector diagramming tool. Think napkin sketches: fast to draw, fine to throw away. Sister project to Goita and Pinta.
 
+![](media/diag.png)
+
 #pwa
 #202602.4
+
+# [cercle]()
+
+[Github](https://github.com/rberenguel/cercle)
+
+A persistent Go daemon that indexes codebases and documents into a multi-tier search system (lexical, structural, semantic), exposed as shell scripts that LLM agents call as native tools. The external context pool in an RLM feedback loop — agents retrieve what they need, write summaries back, and the pool compounds over time.
+
+#go
+#llm
+#wip
+#202602.5
