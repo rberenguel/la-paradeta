@@ -949,3 +949,14 @@ A persistent Go daemon that indexes codebases and documents into a multi-tier se
 #llm
 #wip
 #202602.5
+
+# [garbell]()
+
+[Github](https://github.com/rberenguel/garbell)
+
+Like cercle, but with no daemon, no treesitter and no dependencies. Three regexes in a trenchcoat can go a long way. Offers a set of tools as a skill to allow the investigation of codebases without bloating the context by reading too many files.
+
+#go
+#llm
+#wip
+#202602.5
