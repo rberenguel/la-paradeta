@@ -959,4 +959,16 @@ Like cercle, but with no daemon, no treesitter and no dependencies. Three regexe
 #go
 #llm
 #wip
-#202602.5
+#202603.0
+
+# [Summum]()
+
+[Github](https://github.com/rberenguel/misc-pwas/)
+[Play](https://mostlymaths.net/misc-pwas/summum)
+
+A CCT brain "game".
+
+#game
+#pwa
+#mobile
+#202603.1
