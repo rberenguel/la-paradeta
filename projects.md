@@ -972,3 +972,15 @@ A CCT brain "game".
 #pwa
 #mobile
 #202603.1
+
+# [Pasta]()
+
+[Github](https://github.com/rberenguel/misc-pwas)
+[Use](https://mostlymaths.net/misc-pwas/pasta)
+
+A PWA based on the interaction model of Tasca, for handling "prompts or stuff I need to copy on my Mac and iPhone", without wanting a special keyboard or app.
+
+#pwa
+#wip
+#mobile
+#202603.2
