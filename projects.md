@@ -984,3 +984,54 @@ A PWA based on the interaction model of Tasca, for handling "prompts or stuff I 
 #wip
 #mobile
 #202603.2
+
+# [Baldric]()
+
+[Github](https://github.com/rberenguel/baldric)
+[Use](https://mostlymaths.net/misc-pwas/pasta)
+
+A Telegram bot bridge to Gemini / Claude CLI
+
+#llm
+#wip
+#202603.3
+
+# [stop]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/stop)
+
+<a href="https://en.wikipedia.org/wiki/Stop-signal_task">Stop Signal Task</a> "game".
+
+#pwa
+#bt
+#game
+#mobile
+#202603.4
+
+# [attn]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/attn)
+
+Visual adaptation of the <a href="https://en.wikipedia.org/wiki/Attention_training_technique">Attention Training Technique</a> (ATT) from Adrian Wells' Metacognitive Therapy.
+
+#pwa
+#bt
+#game
+#mobile
+#202603.5
+
+# [vaporwave]()
+
+[Github](https://github.com/rberenguel/vaporwave)
+[Play](https://mostlymaths.net/vaporwave)
+
+A browser racing game inspired by Atari's Enduro (1983), with an optional synthwave visual mode drawing from the generative art at <a href="https://mostlymaths.net/sketches/synthwave/">my Synthwave algorithmic art piece</a>
+
+![](media/vaporwave.png)
+
+#pwa
+#game
+#mobile
+#202603.6
