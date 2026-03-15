@@ -294,6 +294,50 @@ body {
   }
 }
 
+.placeholder-with-icon {
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-x-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  animation: iconBounceX 26s linear infinite alternate;
+  will-change: transform;
+}
+
+.icon-x-track img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  animation: iconBounceY 34s linear infinite alternate;
+  will-change: transform;
+}
+
+@keyframes iconBounceX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100% - 90px));
+  }
+}
+
+@keyframes iconBounceY {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(90px);
+  }
+}
+
 /* --- Filter Indicator --- */
 #filter-indicator {
   position: fixed;

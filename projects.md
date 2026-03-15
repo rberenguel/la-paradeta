@@ -873,6 +873,8 @@ A PWA heavily inspired by <a href="https://tixy.land/">tixy.land</a> and <a href
 
 A Chrome extension to automate demo recordings of single page applications. Otherwise it's hard to show Tasca!
 
+![icon,#000000](media/titella.png)
+
 #chrome-extension
 #202601.2
 
@@ -968,6 +970,8 @@ Like cercle, but with no daemon, no treesitter and no dependencies. Three regexe
 
 A CCT brain "game".
 
+![icon,#000000](media/summum.png)
+
 #game
 #pwa
 #mobile
@@ -979,6 +983,8 @@ A CCT brain "game".
 [Use](https://mostlymaths.net/misc-pwas/pasta)
 
 A PWA based on the interaction model of Tasca, for handling "prompts or stuff I need to copy on my Mac and iPhone", without wanting a special keyboard or app.
+
+![icon,#000000](media/pasta.png)
 
 #pwa
 #wip
@@ -992,6 +998,8 @@ A PWA based on the interaction model of Tasca, for handling "prompts or stuff I 
 
 A Telegram bot bridge to Gemini / Claude CLI
 
+![icon,#000000](media/baldric.png)
+
 #llm
 #wip
 #202603.3
@@ -1002,6 +1010,8 @@ A Telegram bot bridge to Gemini / Claude CLI
 [Play](https://mostlymaths.net/bt/stop)
 
 <a href="https://en.wikipedia.org/wiki/Stop-signal_task">Stop Signal Task</a> "game".
+
+![icon,#000000](media/stop.png)
 
 #pwa
 #bt
@@ -1015,6 +1025,8 @@ A Telegram bot bridge to Gemini / Claude CLI
 [Play](https://mostlymaths.net/bt/attn)
 
 Visual adaptation of the <a href="https://en.wikipedia.org/wiki/Attention_training_technique">Attention Training Technique</a> (ATT) from Adrian Wells' Metacognitive Therapy.
+
+![icon,#000000](media/attn.png)
 
 #pwa
 #bt
@@ -1035,3 +1047,30 @@ A browser racing game inspired by Atari's Enduro (1983), with an optional synthw
 #game
 #mobile
 #202603.6
+
+# [dot matrix]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/dotmatrix)
+
+Similar to Raven's progressive matrices but with dots. It can get hard.
+
+![icon,#000000](media/dotmatrix.png)
+
+#pwa
+#game
+#bt
+#mobile
+#202603.7
+
+# [gclimon]()
+
+[Github](https://github.com/rberenguel/gclimon/)
+
+Hook-based monitor for multiple gemini-cli or Claude code sessions.
+
+![icon,#000000](media/gclimon.png)
+
+#go
+#llm
+#202603.8

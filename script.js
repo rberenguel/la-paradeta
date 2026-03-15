@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
           `<p>${line.replace(/\*(.*?)\*/g, "<strong>$1</strong>").replace(/_(.*?)_/g, "<em>$1</em>")}</p>`,
       )
       .join("");
-    const imageMatch = remainingBlock.match(/!\[.*\]\((.*?)\)/);
+    const imageMatch = remainingBlock.match(/!\[(.*?)\]\((.*?)\)/);
     const blockLines = remainingBlock.split("\n");
     let tagMatches = [];
     blockLines.map(
@@ -93,7 +93,9 @@ document.addEventListener("DOMContentLoaded", () => {
       url: headerMatch[2],
       actions: actions,
       description: descriptionHtml,
-      image: imageMatch?.[1] || "",
+      image: imageMatch && !imageMatch[1] ? imageMatch[2] : "",
+      icon: imageMatch && imageMatch[1] ? imageMatch[2] : "",
+      iconColor: imageMatch?.[1]?.match(/,(\#[0-9a-fA-F]+)/)?.[1] || "",
       tags: tags,
     };
   };
@@ -105,7 +107,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!project) return "";
         const imageHtml = project.image
           ? `<img src="${project.image}" alt="${project.title} logo" class="card-image">`
-          : `<div class="card-image placeholder-image"></div>`;
+          : project.icon
+            ? `<div class="card-image placeholder-with-icon" style="background-color:${project.iconColor || "var(--bg-color)"}"><div class="icon-x-track"><img src="${project.icon}" alt="${project.title} icon"></div></div>`
+            : `<div class="card-image placeholder-image"></div>`;
         const allActions = () => {
           return project.actions
             .map((action) => {
