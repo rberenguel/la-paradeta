@@ -994,7 +994,6 @@ A PWA based on the interaction model of Tasca, for handling "prompts or stuff I 
 # [Baldric]()
 
 [Github](https://github.com/rberenguel/baldric)
-[Use](https://mostlymaths.net/misc-pwas/pasta)
 
 A Telegram bot bridge to Gemini / Claude CLI
 
@@ -1074,3 +1073,239 @@ Hook-based monitor for multiple gemini-cli or Claude code sessions.
 #go
 #llm
 #202603.8
+
+# [regles]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/regles)
+
+Set-shifting under memory load. A rule stack grows each level; prior rules must be held in working memory. Tap tiles satisfying the current rule, then shift to the next.
+
+![icon,#000000](media/regles.png)
+
+#pwa
+#bt
+#game
+#mobile
+#202603.9
+
+# [precis]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/precis)
+
+Two-mode compliance drill. Literal: judge ALLOW/DENY by strict rules. Exploit: toggle attributes to find the structural loophole.
+
+![icon,#000000](media/precis.png)
+
+#pwa
+#bt
+#game
+#mobile
+#202603.10
+
+# [llei]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/llei)
+
+Inductive rule learning. Construct the boolean law (AND, OR, NOT) that correctly classifies all labeled examples.
+
+![icon,#000000](media/llei.png)
+
+#pwa
+#bt
+#game
+#mobile
+#202603.11
+
+# [entrellat]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/entrellat)
+
+3D face matching. A wireframe cube with animated maze patterns rotates in space; pick the 2D panel that matches an actual cube face.
+
+![icon,#000000](media/entrellat.png)
+
+#pwa
+#bt
+#game
+#mobile
+#202603.12
+
+# [flux (brain training)]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/flux)
+
+Prospective memory under load. Classify a rapid word stream while holding dormant intentions.
+
+![icon,#000000](media/flux-bt.png)
+
+#pwa
+#bt
+#game
+#mobile
+#202603.13
+
+# [safata]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/safata)
+
+Parallel context maintenance. Switch between up to 9 workstreams, each with a hidden classification rule you must retain in memory.
+
+![icon,#000000](media/safata.png)
+
+#pwa
+#bt
+#game
+#mobile
+#202603.14
+
+# [topos]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/topos)
+
+Topological working memory. Memorise a directed acyclic graph, survive a distractor phase, then answer reachability and sink-status questions.
+
+![icon,#000000](media/topos.png)
+
+#pwa
+#bt
+#game
+#mobile
+#202603.15
+
+# [Palace]()
+
+[Github](https://github.com/rberenguel/misc-pwas)
+[Play](https://mostlymaths.net/misc-pwas/palace)
+
+A mental scratchpad trainer.
+
+![icon,#000000](media/palace.png)
+
+#pwa
+#mobile
+#202603.16
+
+# [Baralla]()
+
+[Github](https://github.com/rberenguel/baralla)
+[Play](https://mostlymaths.net/baralla)
+
+A card sandbox — drag, stack, fan, shuffle, and flip a standard 52-card deck on a virtual felt table.
+
+![icon,#000000](media/baralla.png)
+
+#pwa
+#game
+#mobile
+#202604.0
+
+# [graner]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/graner)
+
+90-second anagram word sprint. Find as many 5 and 6-letter words as you can from a fixed 7-letter pool.
+
+![icon,#000000](media/graner.png)
+
+#pwa
+#bt
+#game
+#mobile
+#202604.1
+
+# [Ullada]()
+
+[Github](https://github.com/rberenguel/misc-pwas)
+[Use](https://mostlymaths.net/misc-pwas/ullada)
+
+An RSVP speed reader for EPUB files, optionally generating a custom translated version via Chrome's Gemini APIs.
+
+![](media/ullada-shot.png)
+
+#pwa
+#mobile
+#202604.2
+
+# [fil]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/fil)
+
+Memory lifecycle tracer. Find the exact line in multi-file code where an ownership contract breaks.
+
+![icon,#000000](media/fil.png)
+
+#pwa
+#bt
+#game
+#mobile
+#202604.3
+
+# [falla]()
+
+[Github](https://github.com/rberenguel/bt/)
+[Play](https://mostlymaths.net/bt/falla)
+
+Find the wrong item among very similar-looking sprites.
+
+![icon,#000000](media/falla.png)
+
+#pwa
+#bt
+#game
+#mobile
+#202604.4
+
+# [foowrite-esp32]()
+
+[Github](https://github.com/rberenguel/foowrite-esp32)
+
+Vim-like editor for the M5Stack Core2 and Waveshare ESP32-S3-Touch-LCD-3.49, built with ESP-IDF (native C/C++). Straight port of the original foowrite for the Pi Pico.
+
+![](media/foowrite-esp32.jpg)
+
+#esp32
+#c++
+#202604.5
+
+# [dIAri]()
+
+[Github](https://github.com/rberenguel/dIAri)
+
+A Chrome extension that formats a queue of browser tabs into a print-ready newspaper edition for e-ink devices. All AI features run entirely via on-device Gemini Nano.
+
+![](media/diari.jpg)
+
+#chrome-extension
+#202604.6
+
+# [OlleeSplash]()
+
+[Github](https://github.com/rberenguel/ollee-splash)
+
+An iOS app that sends custom splash text to an Ollee watch over Bluetooth Low Energy. Exposes a Shortcuts App Intent for automation.
+
+![icon,#000000](media/ollesplash.png)
+
+#ios
+#202605.0
+
+# [gram]()
+
+[Github](https://github.com/rberenguel/gram)
+
+A minimal Chrome extension for recording cropped areas of any webpage as .webm videos.
+
+![icon,#000000](media/gram.png)
+
+#chrome-extension
+#wip
+#202605.1
