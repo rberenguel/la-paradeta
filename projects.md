@@ -1318,4 +1318,7 @@ A pi agent skill for creating interactive, web-based technical explanations, con
 
 ![icon,#111111](media/shine.png)
 
+#pi
+#skill
+
 #202605.2
