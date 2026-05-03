@@ -1309,3 +1309,13 @@ A minimal Chrome extension for recording cropped areas of any webpage as .webm v
 #chrome-extension
 #wip
 #202605.1
+
+# [shine]()
+
+[Github](https://github.com/rberenguel/shine)
+
+A pi agent skill for creating interactive, web-based technical explanations, converted from moonshine by Ian Johnson (enjalot).
+
+![icon,#111111](media/shine.png)
+
+#202605.2
