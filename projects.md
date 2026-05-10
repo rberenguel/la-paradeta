@@ -1322,3 +1322,15 @@ A pi agent skill for creating interactive, web-based technical explanations, con
 #skill
 
 #202605.2
+
+# [BeatIt]()
+
+[Github](https://github.com/rberenguel/beatit)
+
+An iOS app for binaural beats, brown noise, clicker entrainment, and web radio streaming.
+
+![icon,#000000](media/beatit.png)
+
+#ios
+
+#202605.3
