@@ -1335,6 +1335,17 @@ An iOS app for binaural beats, brown noise, clicker entrainment, and web radio s
 
 #202605.3
 
+# [black-triangle]()
+
+[Github](https://github.com/rberenguel/black-triangle)
+[Play](https://mostlymaths.net/black-triangle/web)
+
+A raylib pipeline proof-of-concept and game template for Mac, WASM, and Miyoo A30 handheld. Proves the full build/deploy pipeline before starting a real game — hence the name.
+
+#c++
+#game
+#202605.5
+
 # [Mica]()
 
 [Github](https://github.com/rberenguel/mica)
