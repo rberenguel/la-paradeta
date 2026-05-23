@@ -1334,3 +1334,15 @@ An iOS app for binaural beats, brown noise, clicker entrainment, and web radio s
 #ios
 
 #202605.3
+
+# [Mica]()
+
+[Github](https://github.com/rberenguel/mica)
+[Play](https://mostlymaths.net/mica/llm)
+
+A ~5.4M parameter hand-crafted Transformer trained on hardboiled detective fiction, with an origami weight-sharing scheme, heterogeneous attention heads, and a browser-based ONNX demo.
+
+![](media/mica.png)
+
+#llm
+#202605.4
