@@ -1287,6 +1287,16 @@ A Chrome extension that formats a queue of browser tabs into a print-ready newsp
 #chrome-extension
 #202604.6
 
+# [xiuxiu]()
+
+[Github](https://github.com/rberenguel/xiuxiu)
+
+A Chrome extension for dictating and editing LLM prompts entirely in the browser. Runs Whisper locally via WebGPU — no server, no cloud, no API keys. Word-level cursor you can move and edit entirely by voice.
+
+#chrome-extension
+#wip
+#202604.7
+
 # [OlleeSplash]()
 
 [Github](https://github.com/rberenguel/ollee-splash)
@@ -1357,3 +1367,51 @@ A ~5.4M parameter hand-crafted Transformer trained on hardboiled detective ficti
 
 #llm
 #202605.4
+
+# [Scream]()
+
+[Github](https://github.com/rberenguel/scream)
+[Use](https://mostlymaths.net/scream)
+
+A minimal browser-based slide editor. Every `#` header is a slide; everything else stays in the editor as private speaker notes. Three panes: editor, timeline (drag to reorder), and live preview.
+
+![icon,#000000](media/scream.png)
+
+#pwa
+#202607.0
+
+# [tabal]()
+
+[Github](https://github.com/rberenguel/tabal)
+[Use](https://mostlymaths.net/tabal)
+
+Train any surface as a drum kit. Tap a pad, strike your surface four times — that sound is now that drum. Uses MFCCs and onset detection for classification. Still rough.
+
+![icon,#000000](media/tabal.png)
+
+#pwa
+#wip
+#202607.1
+
+# [Virar]()
+
+[Github](https://github.com/rberenguel/misc-pwas)
+[Use](https://mostlymaths.net/misc-pwas/virar)
+
+An image colour-grading PWA. Applies Oklab-based processing with zone-system localisation and histogram equalisation to lift, push and shift tones.
+
+![icon,#000000](media/virar.png)
+
+#pwa
+#mobile
+#202607.2
+
+# [ptchr]()
+
+[Github](https://github.com/rberenguel/ptchr)
+[Use](https://mostlymaths.net/ptchr)
+
+A web tool for editing fonts and palettes in LSDj (Little Sound Dj) Game Boy ROM files. Palette editor with HSV + RGB555 sliders and presets; font editor with pixel-level tile editing and TTF import. No install, no build step.
+
+#pwa
+#202607.3
