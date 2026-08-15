@@ -1454,3 +1454,23 @@ A drift-heavy top-down arcade racer inspired by Gene Rally. Procedurally generat
 #game
 #mobile
 #202608.0
+
+# [Recipe Flowchart]()
+
+[Github](https://github.com/rberenguel/misc-pwas)
+[Use](https://mostlymaths.net/misc-pwas/recip)
+
+Convert a recipe written in Markdown into a visual flowchart. Export as PNG.
+
+#pwa
+#202608.1
+
+# [LSDJ Studio]()
+
+[Github](https://github.com/rberenguel/misc-pwas)
+[Use](https://mostlymaths.net/misc-pwas/lsdjs)
+
+An interactive LSDJ instrument workbench and sound reference tool. Live Web Audio chiptune synthesis previews, envelope and pitch table visualizer, Game Boy sound hardware reference, and instrument configuration generator.
+
+#pwa
+#202608.2
