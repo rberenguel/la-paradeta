@@ -1453,7 +1453,7 @@ A drift-heavy top-down arcade racer inspired by Gene Rally. Procedurally generat
 #pwa
 #game
 #mobile
-#202608.0
+#202608.1
 
 # [Recipe Flowchart]()
 
@@ -1463,7 +1463,7 @@ A drift-heavy top-down arcade racer inspired by Gene Rally. Procedurally generat
 Convert a recipe written in Markdown into a visual flowchart. Export as PNG.
 
 #pwa
-#202608.1
+#202608.0
 
 # [LSDJ Studio]()
 
