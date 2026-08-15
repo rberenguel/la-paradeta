@@ -1415,3 +1415,42 @@ A web tool for editing fonts and palettes in LSDj (Little Sound Dj) Game Boy ROM
 
 #pwa
 #202607.3
+
+# [dunno]()
+
+[Github](https://github.com/rberenguel/dunno)
+[Use](https://mostlymaths.net/dunno)
+
+A tiled text editor inspired by Plan 9's Acme, with a gnuplot-compatible inline plotter, side-by-side diff, Markdown preview, and JS eval. Right-click any known word to execute it as a command.
+
+![](media/dunno.jpeg)
+
+#pwa
+#202607.4
+
+# [Un Gaaat]()
+
+[Github](https://github.com/rberenguel/un-gaaat)
+[Play](https://mostlymaths.net/un-gaaat)
+
+A cat collection camera PWA. A quantized YOLOS-tiny ONNX model runs entirely in your browser to detect cats in photos; each cat is scored by fur colour rarity and saved as a pixelated sticker card in your personal collection.
+
+![](media/un-gaaat.png)
+
+#pwa
+#mobile
+#202607.5
+
+# [Neon Rally]()
+
+[Github](https://github.com/rberenguel/neon-racer)
+[Play](https://mostlymaths.net/neon-racer)
+
+A drift-heavy top-down arcade racer inspired by Gene Rally. Procedurally generates a new track every race — shareable circuit IDs, five AI opponents, keyboard/gamepad/touch controls.
+
+![](media/neon-rally.png)
+
+#pwa
+#game
+#mobile
+#202608.0
